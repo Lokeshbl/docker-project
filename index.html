@@ -1,51 +1,53 @@
-<Body background="https://github.com/Raam043/Pipeline/blob/master/Sai.jpg?raw=true">
-        <br>
-        <br>
-</Body>
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>Docker project</title>
-  <style>
-    body {
-      color: #ffffff;
-      background-color: #0188cc;
-      font-family: Arial, sans-serif;
-      font-size: 14px;
-    }
-    
-    h1 {
-      font-size: 500%;
-      font-weight: normal;
-      margin-bottom: 0;
-    }
-    
-    h2 {
-      font-size: 200%;
-      font-weight: normal;
-      margin-bottom: 0;
-    }
-  </style>
-</head>
-<body>
-  <div align="center">
-    <h1><strong>new project</strong></h1>
-    <h2>Welcome to Saikrishna's html World</h2>
-  <p>Call Mr. Ramesh N for enquiries <a href="tel:9902163099"style="color:#0AFFFF"><strong>9902163099</strong></a>.</p>
-	  
-	  
-	  
-   <a href="https://github.com/Raam043/Pipeline/blob/master/SaiKrishna.jpg?raw=true"> <img src="https://github.com/Raam043/Pipeline/blob/master/SaiKrishna.jpg?raw=true" alt="Sai Image" style="width:300px;height:400px;" /> </a>
-								
-<a href="https://github.com/Raam043/Pipeline/blob/master/Sai2.jpeg?raw=true"> <img src="https://github.com/Raam043/Pipeline/blob/master/Sai2.jpeg?raw=true" alt="Sai" style="width:300px;height:400px;" /> </a>
-								
-<a href="https://github.com/Raam043/Pipeline/blob/master/Sai3.jpeg?raw=true"> <img src="https://github.com/Raam043/Pipeline/blob/master/Sai3.jpeg?raw=true" alt="Image" style="width:300px;height:400px;" /> </a>
-							
-<a href="https://github.com/Raam043/Pipeline/blob/master/Sai5.jpeg?raw=true"> <img src="https://github.com/Raam043/Pipeline/blob/master/Sai5.jpeg?raw=true" alt="Image" style="width:300px;height:400px;" /> </a>
-								
-<a href="https://github.com/Raam043/Pipeline/blob/master/Sai6.jpeg?raw=true"> <img src="https://github.com/Raam043/Pipeline/blob/master/Sai6.jpeg?raw=true" alt="Image" style="width:300px;height:400px;" /> </a>
-								
-  </div>
-</body>
-</html>
+<div class="container">
+  <h1>HTML registration form with varification</h1>
+  <form name="registration" class="registartion-form" onsubmit="return formValidation()">
+    <table>
+      <tr>
+        <td><label for="name">Name:</label></td>
+        <td><input type="text" name="name" id="name" placeholder="your name"></td>
+      </tr>
+      <tr>
+        <td><label for="email">Email:</label></td>
+        <td><input type="text" name="email" id="email" placeholder="your email"></td>
+      </tr>
+      <tr>
+        <td><label for="password">Password:</label></td>
+        <td><input type="password" name="password" id="password"></td>
+      </tr>
+      <tr>
+        <td><label for="phoneNumber">Phone Number:</label></td>
+        <td><input type="number" name="phoneNumber" id="phoneNumber"></td>
+      </tr>
+      <tr>
+        <td><label for="gender">Gender:</label></td>
+        <td>Male: <input type="radio" name="gender" value="male">
+          Female: <input type="radio" name="gender" value="female">
+          Other: <input type="radio" name="gender" value="other"></td>
+      </tr>
+      <tr>
+        <td><label for="language">language</label></td>
+        <td>
+          <select name="language" id="language">
+            <option value="">Select language</option>
+            <option value="English">English</option>
+            <option value="Spanish">Spanish</option>
+            <option value="Hindi">Hindi</option>
+            <option value="Arabic">Arabic</option>
+            <option value="Russian">Russian</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="zipcode">Zip Code:</label></td>
+        <td><input type="number" name="zipcode" id="zipcode"></td>
+      </tr>
+      <tr>
+        <td><label for="about">About:</label></td>
+        <td><textarea name="about" id="about" placeholder="Write about yourself..."></textarea></td>
+      </tr>
+      <tr>
+        <td colspan="2"><input type="submit" class="submit" value="Register" /></td>
+      </tr>
+    </table>
+  </form>
+</div>
